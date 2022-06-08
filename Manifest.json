@@ -1,0 +1,26 @@
+{
+	"name": "BetterQwant",
+	"version": "1.0.0",
+	"description": "Because Qwant decided to be ugly",
+	"manifest_version": 3,
+	"author": "RedNeath",
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"icons": {
+		"16": "oldQwant.ico"
+	},
+	"permissions": [
+		"activeTab",
+		"webNavigation",
+		"scripting"
+	],
+	"host_permissions": [
+		"https://www.qwant.com/*"
+	],
+	"action": {
+		"default_icon": "oldQwant.ico",
+		"default_popup": "popup.html"
+	}
+}
