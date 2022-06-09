@@ -1,6 +1,6 @@
 {
 	"name": "BetterQwant",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "Because Qwant decided to be ugly",
 	"manifest_version": 3,
 	"author": "RedNeath",
@@ -9,7 +9,10 @@
 		"type": "module"
 	},
 	"icons": {
-		"16": "oldQwant.ico"
+		"16": "QwantLogo16.png",
+		"32": "QwantLogo32.png",
+		"64": "QwantLogo64.png",
+		"128": "QwantLogo128.png"
 	},
 	"permissions": [
 		"activeTab",
