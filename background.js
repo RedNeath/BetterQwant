@@ -1,22 +1,23 @@
-async function getCurrentTab() {
-	let queryOptions = { active: true, lastFocusedWindow: true };
-	let [tab] = await chrome.tabs.query(queryOptions);
-	return tab;
-}
+////////////////////////////////////////////
+// VARIABLES DECLARATION
+////////////////////////////////////////////
 
-const filter = {
-	url: [
-		{
-			urlMatches: 'https://www.qwant.com/',
-		},
-	],
-};
+// CONSTANTS :
+const sPattern = "https:\/\/www\.qwant\.com\/(?!maps).*";
 
+// OTHERS :
+let bMatchesPattern;
 
-chrome.webNavigation.onCompleted.addListener(() => {
-	getCurrentTab()
-		.then(response => chrome.scripting.executeScript({
-			target: { tabId: response.id },
-			files: ['contentscript.js']
-		}));
-}, filter);
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+	if (changeInfo.status === "complete") {
+		bMatchesPattern = tab.url.match(sPattern)[0] !== "";
+
+		if (bMatchesPattern) {
+			
+			chrome.scripting.executeScript({
+				target: { tabId: tabId },
+				files: ['contentscript.js']
+			});
+		}
+	}
+});

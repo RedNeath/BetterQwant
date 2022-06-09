@@ -13,7 +13,6 @@
 	},
 	"permissions": [
 		"activeTab",
-		"webNavigation",
 		"scripting"
 	],
 	"host_permissions": [
