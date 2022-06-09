@@ -1,4 +1,5 @@
 :root{
+	--transp: #00000000;
 	--grey-000: #ffffff;
 	--grey-000-alpha24: #ffffff3d;
 	--grey-000-alpha30: #ffffff4d;
@@ -111,7 +112,7 @@
 	--default-link-color: var(--action-blue-link);
 	--overlay: var(--grey-200);
 	--memphis-border-width: 2px;
-	--memphis-border: var(--memphis-border-width) solid #00000000;
+	--memphis-border: var(--memphis-border-width) solid var(--transp);
 }
 
 [data-theme=dark]{
@@ -2240,7 +2241,7 @@ top:-5px
 	--cardRadius: 8px;
 	--cardBorderColor: var(--grey-100);
 --cardShadowGrey: 4px 4px 0 0 var(--grey-900-alpha16);
---cardShadowBlue: 4px 4px 0 0 #00000000;
+--cardShadowBlue: 4px 4px 0 0 var(--transp);
 --depth1: 0;
 --depth2: var(--cardShadowGrey)
 }
