@@ -111,7 +111,7 @@
 	--default-link-color: var(--action-blue-link);
 	--overlay: var(--grey-200);
 	--memphis-border-width: 2px;
-	--memphis-border: var(--memphis-border-width) solid var(--grey-900);
+	--memphis-border: var(--memphis-border-width) solid #00000000;
 }
 
 [data-theme=dark]{
@@ -2240,7 +2240,7 @@ top:-5px
 	--cardRadius: 8px;
 	--cardBorderColor: var(--grey-100);
 --cardShadowGrey: 4px 4px 0 0 var(--grey-900-alpha16);
---cardShadowBlue: 4px 4px 0 0 var(--action-blue-200);
+--cardShadowBlue: 4px 4px 0 0 #00000000;
 --depth1: 0;
 --depth2: var(--cardShadowGrey)
 }

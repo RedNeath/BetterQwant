@@ -13,7 +13,7 @@ for (i = 0; i < children.length; i++) {
 }
 style = document.createElement("link");
 style.rel = "stylesheet";
-style.href = "https://cdn.discordapp.com/attachments/485070483260440581/984239594998489178/colors.css";
+style.href = "https://cdn.jsdelivr.net/gh/RedNeath/BetterQwant/colors.css";
 document.head.removeChild(child);
 document.head.insertBefore(style, children[i]);
 
