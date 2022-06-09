@@ -4,7 +4,7 @@ function prettify() {
 	////////////////////////////////////////////
 
 	// Constants :
-	const sStylePath = "https://cdn.jsdelivr.net/gh/RedNeath/BetterQwant@1.0.1/colors.css";
+	const sStylePath = "https://cdn.jsdelivr.net/gh/RedNeath/BetterQwant@1.0.3/colors.css";
 	const sTopDiv	 = "Hero-module__HeroContainer___3ZALZ Box-module__relative___1cR1n";
 	const sContDivs	 = "Section-module__SectionContainer___1EWww";
 	const sRvrsCont	 = "Section-module__SectionContainer___1EWww Section-module__SectionContainerReverse___1G_zi";
